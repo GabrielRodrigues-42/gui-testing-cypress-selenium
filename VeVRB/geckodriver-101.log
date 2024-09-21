@@ -1,0 +1,28 @@
+1726928003010	geckodriver	INFO	Listening on 127.0.0.1:62464
+1726928006081	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62465" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pingu\\AppData\\Local\\Temp\\rust_mozprofileZCDW5H"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726928006424	Marionette	INFO	Marionette enabled
+1726928006575	Marionette	INFO	Listening on port 62472
+WebDriver BiDi listening on ws://127.0.0.1:62465
+Read port: 62472
+1726928006714	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62465/devtools/browser/e091cd8e-0898-43ca-8ed3-dfc9b34b3bf5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:9990."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:9990."
+1726928011532	Marionette	INFO	Stopped listening on port 62472
+JavaScript warning: http://localhost:9990/build/admin/admin-entry.js, line 51649: Script terminated by timeout at:
+getStyle@http://localhost:9990/build/admin/admin-entry.js:51649:1
+readUsedSize@http://localhost:9990/build/admin/admin-entry.js:51791:25
+initCanvas@http://localhost:9990/build/admin/admin-entry.js:43360:89
+acquireContext@http://localhost:9990/build/admin/admin-entry.js:43509:17
+Chart@http://localhost:9990/build/admin/admin-entry.js:44052:35
+drawChart@http://localhost:9990/build/admin/admin-entry.js:469:10
+init@http://localhost:9990/build/admin/admin-entry.js:1221:75
+StatisticsComponent@http://localhost:9990/build/admin/admin-entry.js:1207:10
+./vendor/sylius/sylius/src/Sylius/Bundle/AdminBundle/Resources/private/js/app.js/<@http://localhost:9990/build/admin/admin-entry.js:155:31
+mightThrow@http://localhost:9990/build/admin/admin-entry.js:6425:29
+./node_modules/jquery/dist/jquery.js/</Deferred/then/resolve/</process<@http://localhost:9990/build/admin/admin-entry.js:6493:12
+
+Dynamically enable window occlusion 1

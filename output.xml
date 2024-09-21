@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-20T14:06:01.893377" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\pingu\OneDrive\Documentos\gui-testing-cypress-selenium\test.robot">
+<test id="s1-t1" name="Valid Login" line="9">
+<kw name="Open Sylius Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-20T14:06:02.184630" level="INFO">Opening browser '' to base url 'http://localhost:9990/admin'.</msg>
+<msg time="2024-09-20T14:06:02.184630" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg time="2024-09-20T14:06:02.184630" level="FAIL">ValueError:  is not a supported browser.</msg>
+<arg>${Login-URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-09-20T14:06:02.184630" elapsed="0.001999">ValueError:  is not a supported browser.</status>
+</kw>
+<status status="FAIL" start="2024-09-20T14:06:02.183632" elapsed="0.002997">ValueError:  is not a supported browser.</status>
+</kw>
+<kw name="Type In Username">
+<arg>sylius</arg>
+<status status="NOT RUN" start="2024-09-20T14:06:02.187629" elapsed="0.000000"/>
+</kw>
+<kw name="Type In Password">
+<arg>sylius</arg>
+<status status="NOT RUN" start="2024-09-20T14:06:02.187629" elapsed="0.000000"/>
+</kw>
+<kw name="Click Login">
+<status status="NOT RUN" start="2024-09-20T14:06:02.187629" elapsed="0.000000"/>
+</kw>
+<kw name="Validate">
+<status status="NOT RUN" start="2024-09-20T14:06:02.187629" elapsed="0.000000"/>
+</kw>
+<kw name="[Teardown] Close Browser">
+<status status="NOT RUN" start="2024-09-20T14:06:02.187629" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-09-20T14:06:02.182633" elapsed="0.004996">ValueError:  is not a supported browser.</status>
+</test>
+<status status="FAIL" start="2024-09-20T14:06:01.896378" elapsed="0.292529"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,36 @@
+1726925875547	geckodriver	INFO	Listening on 127.0.0.1:59358
+1726925878575	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59359" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pingu\\AppData\\Local\\Temp\\rust_mozprofileupGs5i"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726925878887	Marionette	INFO	Marionette enabled
+1726925879071	Marionette	INFO	Listening on port 59366
+Read port: 59366
+WebDriver BiDi listening on ws://127.0.0.1:59359
+1726925879131	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59359/devtools/browser/00dc7f4a-a6c6-4247-a778-a5b294cb8220
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:9990."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:9990."
+1726925883995	Marionette	INFO	Stopped listening on port 59366
+JavaScript warning: http://localhost:9990/build/admin/admin-entry.js, line 3880: Script terminated by timeout at:
+find@http://localhost:9990/build/admin/admin-entry.js:3880:26
+./node_modules/jquery/dist/jquery.js/</find.matchesSelector@http://localhost:9990/build/admin/admin-entry.js:4380:9
+add@http://localhost:9990/build/admin/admin-entry.js:7867:16
+./node_modules/jquery/dist/jquery.js/</on/<@http://localhost:9990/build/admin/admin-entry.js:7833:16
+each@http://localhost:9990/build/admin/admin-entry.js:3329:19
+each@http://localhost:9990/build/admin/admin-entry.js:3151:17
+on@http://localhost:9990/build/admin/admin-entry.js:7832:14
+on@http://localhost:9990/build/admin/admin-entry.js:8672:10
+inputEvents@http://localhost:9990/build/admin/admin-entry.js:17944:16
+events@http://localhost:9990/build/admin/admin-entry.js:17908:25
+initialize@http://localhost:9990/build/admin/admin-entry.js:17481:25
+./node_modules/semantic-ui-css/components/dropdown.js/$.fn.dropdown/<@http://localhost:9990/build/admin/admin-entry.js:21055:16
+each@http://localhost:9990/build/admin/admin-entry.js:3329:19
+each@http://localhost:9990/build/admin/admin-entry.js:3151:17
+./node_modules/semantic-ui-css/components/dropdown.js/$.fn.dropdown@http://localhost:9990/build/admin/admin-entry.js:17408:6
+./vendor/sylius/sylius/src/Sylius/Bundle/UiBundle/Resources/private/js/app.js/<@http://localhost:9990/build/admin/admin-entry.js:1566:71
+mightThrow@http://localhost:9990/build/admin/admin-entry.js:6425:29
+./node_modules/jquery/dist/jquery.js/</Deferred/then/resolve/</process<@http://localhost:9990/build/admin/admin-entry.js:6493:12
+
+JavaScript error: http://localhost:9990/build/admin/admin-entry.js, line 989: NS_ERROR_FAILURE: 
+Dynamically enable window occlusion 1

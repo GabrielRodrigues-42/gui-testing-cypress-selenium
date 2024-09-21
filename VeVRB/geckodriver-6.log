@@ -1,0 +1,17 @@
+1726853529538	geckodriver	INFO	Listening on 127.0.0.1:51525
+1726853532599	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51526" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pingu\\AppData\\Local\\Temp\\rust_mozprofileKqQ7iG"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726853532897	Marionette	INFO	Marionette enabled
+1726853533040	Marionette	INFO	Listening on port 51533
+WebDriver BiDi listening on ws://127.0.0.1:51526
+Read port: 51533
+1726853533215	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51526/devtools/browser/3ba7185a-60e1-42ec-92dd-4b68102410ed
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:9990."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:9990."
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "http://localhost:9990/admin/" ({})
+console.warn: WindowsJumpLists: "Failed to fetch favicon for " "http://localhost:9990/admin/login" ({})
+Exiting due to channel error.
+Exiting due to channel error.

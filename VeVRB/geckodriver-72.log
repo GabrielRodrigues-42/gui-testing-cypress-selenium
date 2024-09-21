@@ -1,0 +1,22 @@
+1726926655309	geckodriver	INFO	Listening on 127.0.0.1:60697
+1726926658366	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60698" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\pingu\\AppData\\Local\\Temp\\rust_mozprofileGGKOks"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1726926658710	Marionette	INFO	Marionette enabled
+1726926658868	Marionette	INFO	Listening on port 60706
+Read port: 60706
+WebDriver BiDi listening on ws://127.0.0.1:60698
+1726926658953	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60698/devtools/browser/9734f942-ea10-4894-b926-91663119f096
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:9990."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://localhost:9990."
+1726926667937	Marionette	INFO	Stopped listening on port 60706
+JavaScript warning: http://localhost:9990/build/admin/admin-entry.js, line 6890: Script terminated by timeout at:
+camelCase@http://localhost:9990/build/admin/admin-entry.js:6890:2
+get@http://localhost:9990/build/admin/admin-entry.js:6971:52
+trigger@http://localhost:9990/build/admin/admin-entry.js:11562:24
+simulate@http://localhost:9990/build/admin/admin-entry.js:11634:16
+focusMappedHandler@http://localhost:9990/build/admin/admin-entry.js:8510:17
+
+Dynamically enable window occlusion 1

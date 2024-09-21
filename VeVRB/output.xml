@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.6 on win32)" generated="2024-09-21T11:44:22.192864" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="C:\Users\pingu\OneDrive\Documentos\gui-testing-cypress-selenium\VeVRB\test.robot">
+<test id="s1-t1" name="Valid Login" line="11">
+<kw name="Open Sylius Browser">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:22.481358" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9990/admin'.</msg>
+<arg>${Login-URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-21T11:44:22.481358" elapsed="7.341528"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:29.830886" level="INFO">Page title is 'Sylius | Administration panel login'.</msg>
+<arg>Sylius | Administration panel login</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-09-21T11:44:29.823886" elapsed="0.007000"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:22.480361" elapsed="7.350525"/>
+</kw>
+<kw name="Type In Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:29.831886" level="INFO">Typing text 'sylius' into text field 'id=_username'.</msg>
+<arg>id=_username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:29.830886" elapsed="0.074753"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:44:29.830886" elapsed="0.074753"/>
+</kw>
+<kw name="Type In Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:29.906657" level="INFO">Typing text 'sylius' into text field 'id=_password'.</msg>
+<arg>id=_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:29.906657" elapsed="0.021995"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:44:29.905639" elapsed="0.023013"/>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:29.929650" level="INFO">Clicking button 'css=.primary'.</msg>
+<arg>css=.primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:29.929650" elapsed="1.294423"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:29.929650" elapsed="1.294423"/>
+</kw>
+<kw name="Validate Entrance">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:31.231637" level="INFO">Page title is 'Dashboard | Sylius'.</msg>
+<arg>Dashboard | Sylius</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-09-21T11:44:31.225070" elapsed="0.006567"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:31.225070" elapsed="0.006567"/>
+</kw>
+<kw name="Final Curtain" type="TEARDOWN">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-21T11:44:31.232629" elapsed="0.005001"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-21T11:44:31.238638" elapsed="7.376528"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:31.232629" elapsed="7.382537"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:22.479359" elapsed="16.135807"/>
+</test>
+<test id="s1-t2" name="Change Amount Of Fashion Web Store to FedEx" line="19">
+<kw name="Login" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:38.618690" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9990/admin'.</msg>
+<arg>${Login-URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-21T11:44:38.617687" elapsed="7.664236"/>
+</kw>
+<kw name="Type In Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:46.282924" level="INFO">Typing text 'sylius' into text field 'id=_username'.</msg>
+<arg>id=_username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:46.282924" elapsed="0.068015"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:44:46.281923" elapsed="0.069016"/>
+</kw>
+<kw name="Type In Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:46.351943" level="INFO">Typing text 'sylius' into text field 'id=_password'.</msg>
+<arg>id=_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:46.351943" elapsed="0.027124"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:44:46.350939" elapsed="0.028128"/>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:46.380068" level="INFO">Clicking button 'css=.primary'.</msg>
+<arg>css=.primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:46.380068" elapsed="1.273705"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:46.380068" elapsed="1.273705"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:38.617687" elapsed="9.036086"/>
+</kw>
+<kw name="Click Shipping Methods">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:47.654771" level="INFO">Clicking link '/admin/shipping-methods/'.</msg>
+<arg>/admin/shipping-methods/</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:47.654771" elapsed="2.409105"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:47.654771" elapsed="2.409105"/>
+</kw>
+<kw name="Search For Shipping Method">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:50.065155" level="INFO">Typing text 'fedex' into text field 'id=criteria_search_value'.</msg>
+<arg>id=criteria_search_value</arg>
+<arg>${searchText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:50.065155" elapsed="0.059019"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:50.124174" level="INFO">Clicking button 'css=.ui.blue.labeled.icon.button'.</msg>
+<arg>css=.ui.blue.labeled.icon.button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:50.124174" elapsed="0.460220"/>
+</kw>
+<arg>fedex</arg>
+<status status="PASS" start="2024-09-21T11:44:50.065155" elapsed="0.519239"/>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:50.585523" level="INFO">Clicking element 'xpath=(//*[contains(@class, 'ui labeled icon button ')])[last()]'.</msg>
+<arg>xpath=(//*[contains(@class, 'ui labeled icon button ')])[last()]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:50.585523" elapsed="0.444964"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Edit shipping method</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-21T11:44:51.031488" elapsed="0.015478"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:50.585523" elapsed="0.461443"/>
+</kw>
+<kw name="Update Field">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:51.050039" elapsed="0.066404"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:51.118454" level="INFO">Typing text '9' into text field 'sylius_shipping_method_configuration_FASHION_WEB_amount'.</msg>
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:51.117460" elapsed="0.038148"/>
+</kw>
+<arg>9</arg>
+<arg>sylius_shipping_method_configuration_FASHION_WEB_amount</arg>
+<status status="PASS" start="2024-09-21T11:44:51.047989" elapsed="0.107619"/>
+</kw>
+<kw name="Click Save Changes">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:51.156608" level="INFO">Clicking button 'id=sylius_save_changes_button'.</msg>
+<arg>id=sylius_save_changes_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:44:51.156608" elapsed="0.791488"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:51.155608" elapsed="0.792488"/>
+</kw>
+<kw name="Validate">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expectedMessage}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-21T11:44:51.948096" elapsed="0.012044"/>
+</kw>
+<arg>Shipping method has been successfully updated.</arg>
+<status status="PASS" start="2024-09-21T11:44:51.948096" elapsed="0.012044"/>
+</kw>
+<kw name="Final Curtain" type="TEARDOWN">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-21T11:44:51.961136" elapsed="0.003000"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-21T11:44:51.964136" elapsed="7.375427"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:51.960140" elapsed="7.379423"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:38.616748" elapsed="20.722815"/>
+</test>
+<test id="s1-t3" name="Change Position of FedEx" line="27">
+<kw name="Login" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:44:59.341572" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9990/admin'.</msg>
+<arg>${Login-URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-21T11:44:59.341572" elapsed="7.557737"/>
+</kw>
+<kw name="Type In Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:06.900312" level="INFO">Typing text 'sylius' into text field 'id=_username'.</msg>
+<arg>id=_username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:06.900312" elapsed="0.075726"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:45:06.900312" elapsed="0.076739"/>
+</kw>
+<kw name="Type In Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:06.977051" level="INFO">Typing text 'sylius' into text field 'id=_password'.</msg>
+<arg>id=_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:06.977051" elapsed="0.025643"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:45:06.977051" elapsed="0.025643"/>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:07.002694" level="INFO">Clicking button 'css=.primary'.</msg>
+<arg>css=.primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:07.002694" elapsed="1.181560"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:07.002694" elapsed="1.181560"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:59.341572" elapsed="8.842682"/>
+</kw>
+<kw name="Click Shipping Methods">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:08.185770" level="INFO">Clicking link '/admin/shipping-methods/'.</msg>
+<arg>/admin/shipping-methods/</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:08.185770" elapsed="2.503866"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:08.184254" elapsed="2.505382"/>
+</kw>
+<kw name="Search For Shipping Method">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:10.690633" level="INFO">Typing text 'fedex' into text field 'id=criteria_search_value'.</msg>
+<arg>id=criteria_search_value</arg>
+<arg>${searchText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:10.690633" elapsed="0.078120"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:10.769753" level="INFO">Clicking button 'css=.ui.blue.labeled.icon.button'.</msg>
+<arg>css=.ui.blue.labeled.icon.button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:10.769753" elapsed="0.520524"/>
+</kw>
+<arg>fedex</arg>
+<status status="PASS" start="2024-09-21T11:45:10.690633" elapsed="0.599644"/>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:11.291276" level="INFO">Clicking element 'xpath=(//*[contains(@class, 'ui labeled icon button ')])[last()]'.</msg>
+<arg>xpath=(//*[contains(@class, 'ui labeled icon button ')])[last()]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:11.291276" elapsed="0.511316"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Edit shipping method</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-21T11:45:11.802592" elapsed="0.015347"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:11.290277" elapsed="0.527662"/>
+</kw>
+<kw name="Update Field">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:11.819454" elapsed="0.056403"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:11.875857" level="INFO">Typing text '0' into text field 'sylius_shipping_method_position'.</msg>
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:11.875857" elapsed="0.058968"/>
+</kw>
+<arg>0</arg>
+<arg>sylius_shipping_method_position</arg>
+<status status="PASS" start="2024-09-21T11:45:11.817939" elapsed="0.116886"/>
+</kw>
+<kw name="Click Save Changes">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:11.937348" level="INFO">Clicking button 'id=sylius_save_changes_button'.</msg>
+<arg>id=sylius_save_changes_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:11.936333" elapsed="1.022237"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:11.936333" elapsed="1.022237"/>
+</kw>
+<kw name="Validate">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expectedMessage}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-21T11:45:12.959572" elapsed="0.012517"/>
+</kw>
+<arg>Shipping method has been successfully updated.</arg>
+<status status="PASS" start="2024-09-21T11:45:12.958570" elapsed="0.013519"/>
+</kw>
+<kw name="Final Curtain" type="TEARDOWN">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-21T11:45:12.973604" elapsed="0.003539"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-21T11:45:12.978144" elapsed="7.057987"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:12.973604" elapsed="7.062527"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:44:59.340564" elapsed="20.695567"/>
+</test>
+<test id="s1-t4" name="Create Shipping Method" line="34">
+<kw name="Login" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:20.038136" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9990/admin'.</msg>
+<arg>${Login-URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-21T11:45:20.038136" elapsed="7.934952"/>
+</kw>
+<kw name="Type In Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:27.973597" level="INFO">Typing text 'sylius' into text field 'id=_username'.</msg>
+<arg>id=_username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:27.973597" elapsed="0.066408"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:45:27.973597" elapsed="0.067406"/>
+</kw>
+<kw name="Type In Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:28.041003" level="INFO">Typing text 'sylius' into text field 'id=_password'.</msg>
+<arg>id=_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:28.041003" elapsed="0.014520"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:45:28.041003" elapsed="0.014520"/>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:28.056520" level="INFO">Clicking button 'css=.primary'.</msg>
+<arg>css=.primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:28.055523" elapsed="1.371785"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:28.055523" elapsed="1.371785"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:20.038136" elapsed="9.390174"/>
+</kw>
+<kw name="Click Shipping Methods">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:29.429316" level="INFO">Clicking link '/admin/shipping-methods/'.</msg>
+<arg>/admin/shipping-methods/</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:29.429316" elapsed="2.499910"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:29.428310" elapsed="2.500916"/>
+</kw>
+<kw name="Click Create">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:31.930229" level="INFO">Clicking link '/admin/shipping-methods/new'.</msg>
+<arg>/admin/shipping-methods/new</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:31.930229" elapsed="0.540725"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:31.929226" elapsed="0.541728"/>
+</kw>
+<kw name="Fill Necessary Fields">
+<kw name="Update Field">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:32.472951" elapsed="0.098767"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:32.572718" level="INFO">Typing text 'code' into text field 'sylius_shipping_method_code'.</msg>
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:32.571718" elapsed="0.097317"/>
+</kw>
+<arg>code</arg>
+<arg>sylius_shipping_method_code</arg>
+<status status="PASS" start="2024-09-21T11:45:32.472951" elapsed="0.196084"/>
+</kw>
+<kw name="Update Field">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:32.669571" elapsed="0.016470"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:32.687041" level="INFO">Typing text 'name' into text field 'sylius_shipping_method_translations_en_US_name'.</msg>
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:32.686041" elapsed="0.031775"/>
+</kw>
+<arg>name</arg>
+<arg>sylius_shipping_method_translations_en_US_name</arg>
+<status status="PASS" start="2024-09-21T11:45:32.669571" elapsed="0.048245"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:32.718819" level="INFO">Typing text 'Rest of the World' into text field 'sylius_shipping_method_zone'.</msg>
+<arg>sylius_shipping_method_zone</arg>
+<arg>Rest of the World</arg>
+<arg>False</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:32.717816" elapsed="0.033921"/>
+</kw>
+<kw name="Update Field">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:32.753743" elapsed="0.017254"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:32.771996" level="INFO">Typing text '9' into text field 'sylius_shipping_method_configuration_FASHION_WEB_amount'.</msg>
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:32.770997" elapsed="0.024350"/>
+</kw>
+<arg>9</arg>
+<arg>sylius_shipping_method_configuration_FASHION_WEB_amount</arg>
+<status status="PASS" start="2024-09-21T11:45:32.752741" elapsed="0.042606"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:32.471955" elapsed="0.323392"/>
+</kw>
+<kw name="Click Create Method">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:32.796363" level="INFO">Clicking button 'css=*[class^="ui labeled icon primary button"]'.</msg>
+<arg>css=*[class^="ui labeled icon primary button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:32.796363" elapsed="0.509749"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:32.796363" elapsed="0.509749"/>
+</kw>
+<kw name="Validate">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:38.513724" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-40.png"&gt;&lt;img src="selenium-screenshot-40.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-21T11:45:38.514939" level="FAIL">Text 'Shipping method has been successfully created.' did not appear in 5 seconds.</msg>
+<arg>${expectedMessage}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="FAIL" start="2024-09-21T11:45:33.307115" elapsed="5.209822">Text 'Shipping method has been successfully created.' did not appear in 5 seconds.</status>
+</kw>
+<arg>Shipping method has been successfully created.</arg>
+<status status="FAIL" start="2024-09-21T11:45:33.307115" elapsed="5.209822">Text 'Shipping method has been successfully created.' did not appear in 5 seconds.</status>
+</kw>
+<kw name="Final Curtain" type="TEARDOWN">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-21T11:45:38.519940" elapsed="0.002004"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-21T11:45:38.521944" elapsed="6.851519"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:38.517940" elapsed="6.855523"/>
+</kw>
+<status status="FAIL" start="2024-09-21T11:45:20.037131" elapsed="25.336332">Text 'Shipping method has been successfully created.' did not appear in 5 seconds.</status>
+</test>
+<test id="s1-t5" name="Create Duplicate Shipping Method" line="40">
+<kw name="Login" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:45.375727" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9990/admin'.</msg>
+<arg>${Login-URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-21T11:45:45.375727" elapsed="7.392229"/>
+</kw>
+<kw name="Type In Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:52.768959" level="INFO">Typing text 'sylius' into text field 'id=_username'.</msg>
+<arg>id=_username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:52.768959" elapsed="0.077405"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:45:52.767956" elapsed="0.078408"/>
+</kw>
+<kw name="Type In Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:52.847364" level="INFO">Typing text 'sylius' into text field 'id=_password'.</msg>
+<arg>id=_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:52.847364" elapsed="0.022920"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:45:52.846364" elapsed="0.023920"/>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:52.870284" level="INFO">Clicking button 'css=.primary'.</msg>
+<arg>css=.primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:52.870284" elapsed="1.206068"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:52.870284" elapsed="1.206068"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:45.375727" elapsed="8.700625"/>
+</kw>
+<kw name="Click Shipping Methods">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:54.078352" level="INFO">Clicking link '/admin/shipping-methods/'.</msg>
+<arg>/admin/shipping-methods/</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:54.077353" elapsed="2.487577"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:54.077353" elapsed="2.487577"/>
+</kw>
+<kw name="Click Create">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:56.565935" level="INFO">Clicking link '/admin/shipping-methods/new'.</msg>
+<arg>/admin/shipping-methods/new</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:56.565935" elapsed="0.493813"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:56.564930" elapsed="0.495888"/>
+</kw>
+<kw name="Fill Necessary Fields">
+<kw name="Update Field">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.062815" elapsed="0.110128"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:57.172943" level="INFO">Typing text 'code' into text field 'sylius_shipping_method_code'.</msg>
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.172943" elapsed="0.025120"/>
+</kw>
+<arg>code</arg>
+<arg>sylius_shipping_method_code</arg>
+<status status="PASS" start="2024-09-21T11:45:57.061817" elapsed="0.137243"/>
+</kw>
+<kw name="Update Field">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.199060" elapsed="0.018528"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:57.218592" level="INFO">Typing text 'name' into text field 'sylius_shipping_method_translations_en_US_name'.</msg>
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.217588" elapsed="0.028620"/>
+</kw>
+<arg>name</arg>
+<arg>sylius_shipping_method_translations_en_US_name</arg>
+<status status="PASS" start="2024-09-21T11:45:57.199060" elapsed="0.047148"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:57.246208" level="INFO">Typing text 'Rest of the World' into text field 'sylius_shipping_method_zone'.</msg>
+<arg>sylius_shipping_method_zone</arg>
+<arg>Rest of the World</arg>
+<arg>False</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.246208" elapsed="0.030887"/>
+</kw>
+<kw name="Update Field">
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${field}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.278094" elapsed="0.024814"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:57.302908" level="INFO">Typing text '9' into text field 'sylius_shipping_method_configuration_FASHION_WEB_amount'.</msg>
+<arg>${field}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.302908" elapsed="0.039944"/>
+</kw>
+<arg>9</arg>
+<arg>sylius_shipping_method_configuration_FASHION_WEB_amount</arg>
+<status status="PASS" start="2024-09-21T11:45:57.277095" elapsed="0.065757"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:57.060818" elapsed="0.282034"/>
+</kw>
+<kw name="Click Create Method">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:45:57.344076" level="INFO">Clicking button 'css=*[class^="ui labeled icon primary button"]'.</msg>
+<arg>css=*[class^="ui labeled icon primary button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.344076" elapsed="0.474982"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:57.344076" elapsed="0.474982"/>
+</kw>
+<kw name="Validate">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expectedMessage}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.820119" elapsed="0.013694"/>
+</kw>
+<arg>This form contains errors.</arg>
+<status status="PASS" start="2024-09-21T11:45:57.819589" elapsed="0.015223"/>
+</kw>
+<kw name="Final Curtain" type="TEARDOWN">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.834812" elapsed="0.011551"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-21T11:45:57.846363" elapsed="6.989167"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:57.834812" elapsed="7.000718"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:45:45.374727" elapsed="19.461808"/>
+</test>
+<test id="s1-t6" name="Edit and Create Rule" line="46">
+<status status="FAIL" start="2024-09-21T11:46:04.836535" elapsed="0.001000">Test cannot be empty.</status>
+</test>
+<test id="s1-t7" name="Delete Shipping Method" line="47">
+<kw name="Login" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:04.839534" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:9990/admin'.</msg>
+<arg>${Login-URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-21T11:46:04.838537" elapsed="7.530822"/>
+</kw>
+<kw name="Type In Username">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:12.370360" level="INFO">Typing text 'sylius' into text field 'id=_username'.</msg>
+<arg>id=_username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:12.370360" elapsed="0.073198"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:46:12.369359" elapsed="0.074199"/>
+</kw>
+<kw name="Type In Password">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:12.444567" level="INFO">Typing text 'sylius' into text field 'id=_password'.</msg>
+<arg>id=_password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:12.444567" elapsed="0.033477"/>
+</kw>
+<arg>sylius</arg>
+<status status="PASS" start="2024-09-21T11:46:12.443558" elapsed="0.034486"/>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:12.479252" level="INFO">Clicking button 'css=.primary'.</msg>
+<arg>css=.primary</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:12.479041" elapsed="1.167095"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:46:12.478044" elapsed="1.168092"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:46:04.838537" elapsed="8.808764"/>
+</kw>
+<kw name="Click Shipping Methods">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:13.648303" level="INFO">Clicking link '/admin/shipping-methods/'.</msg>
+<arg>/admin/shipping-methods/</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:13.647301" elapsed="1.965094"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:46:13.647301" elapsed="1.965094"/>
+</kw>
+<kw name="Search For Shipping Method">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:15.614491" level="INFO">Typing text 'code' into text field 'id=criteria_search_value'.</msg>
+<arg>id=criteria_search_value</arg>
+<arg>${searchText}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:15.613478" elapsed="0.066549"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:15.680027" level="INFO">Clicking button 'css=.ui.blue.labeled.icon.button'.</msg>
+<arg>css=.ui.blue.labeled.icon.button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:15.680027" elapsed="0.481419"/>
+</kw>
+<arg>code</arg>
+<status status="PASS" start="2024-09-21T11:46:15.613478" elapsed="0.547968"/>
+</kw>
+<kw name="Click Deletion">
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:16.177709" level="INFO">${deleteButtons} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="ddddf131-8d56-4b89-81a5-a8834585ebb1", element="bd8ebe9f-de90-4287-9c64-164c08bd76ec")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (s...</msg>
+<var>${deleteButtons}</var>
+<arg>css=*[class^="ui red labeled icon button"]</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:16.162446" elapsed="0.015263"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:16.177709" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="ddddf131-8d56-4b89-81a5-a8834585ebb1", element="89e07068-10ba-48cd-b7e4-dfd1a7f80072")&gt;'.</msg>
+<arg>${deleteButtons[-1]}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:16.177709" elapsed="0.249855"/>
+</kw>
+<kw name="Validate">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expectedMessage}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-21T11:46:16.428566" elapsed="0.003000"/>
+</kw>
+<arg>Confirm your action</arg>
+<status status="PASS" start="2024-09-21T11:46:16.428566" elapsed="0.003000"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:16.436725" level="INFO">${confirmButtons} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="ddddf131-8d56-4b89-81a5-a8834585ebb1", element="ea0e93fd-8792-4342-b28e-aefa9bff3717")&gt;]</msg>
+<var>${confirmButtons}</var>
+<arg>id=confirmation-button</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:16.431566" elapsed="0.005159"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-21T11:46:16.436725" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="ddddf131-8d56-4b89-81a5-a8834585ebb1", element="ea0e93fd-8792-4342-b28e-aefa9bff3717")&gt;'.</msg>
+<arg>${confirmButtons[-1]}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-21T11:46:16.436725" elapsed="0.560674"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:46:16.162446" elapsed="0.834953"/>
+</kw>
+<kw name="Validate">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${expectedMessage}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-09-21T11:46:16.998403" elapsed="0.007511"/>
+</kw>
+<arg>Shipping method has been successfully deleted.</arg>
+<status status="PASS" start="2024-09-21T11:46:16.997399" elapsed="0.008515"/>
+</kw>
+<kw name="Final Curtain" type="TEARDOWN">
+<kw name="Delete All Cookies" owner="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" start="2024-09-21T11:46:17.006914" elapsed="0.008622"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-09-21T11:46:17.016535" elapsed="2.925644"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:46:17.005914" elapsed="2.936265"/>
+</kw>
+<status status="PASS" start="2024-09-21T11:46:04.838537" elapsed="15.104952"/>
+</test>
+<test id="s1-t8" name="Change Amount Of Fashion Web Store With Invalid Valor" line="53">
+<status status="FAIL" start="2024-09-21T11:46:19.944491" elapsed="0.000000">Test cannot be empty.</status>
+</test>
+<test id="s1-t9" name="Create Unseccessfully Shipping Method" line="54">
+<status status="FAIL" start="2024-09-21T11:46:19.945490" elapsed="0.000000">Test cannot be empty.</status>
+</test>
+<test id="s1-t10" name="Archive Shipping Method" line="55">
+<status status="FAIL" start="2024-09-21T11:46:19.946488" elapsed="0.000000">Test cannot be empty.</status>
+</test>
+<test id="s1-t11" name="Unarchive Shipping Method" line="56">
+<status status="FAIL" start="2024-09-21T11:46:19.947488" elapsed="0.000000">Test cannot be empty.</status>
+</test>
+<status status="FAIL" start="2024-09-21T11:44:22.195864" elapsed="117.752624"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="6" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
